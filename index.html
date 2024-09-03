@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link href="dist/css/final.css" rel="stylesheet" />
+    <link href="dist/css/additional_styles.css" rel="stylesheet" />
     <script>
       if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         document.documentElement.classList.add('dark');
@@ -44,7 +45,7 @@
                   <a href="#portfolio" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Portfolio</a>
                 </li>
                 <li class="group">
-                  <a href="#clients" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Clients</a>
+                  <a href="#milestones" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Milestones</a>
                 </li>
                 <!-- <li class="group">
                   <a href="#blog" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Blog</a>
@@ -108,13 +109,13 @@
         <div class="flex flex-wrap">
           <div class="mb-10 w-full px-4 lg:w-1/2">
             <h4 class="mb-3 text-lg font-bold uppercase text-primary">Tentang Saya</h4>
-            <h2 class="mb-5 max-w-md text-3xl font-bold text-dark dark:text-white lg:text-2xl">Mengenal saya lebih jauh, ya</h2>
-            <p class="max-w-xl text-base font-medium text-secondary lg:text-lg">Sebut saja Fathan, seorang mahasiswa aktif jurusan Teknik Informatika semester 7 di Universitas Islam Negeri Syarif Hidayatullah Jakarta.</p>
+            <h2 class="mb-5 max-w-md text-3xl font-bold text-dark dark:text-white lg:text-2xl">Mari kenali saya lebih dalam.</h2>
+            <p class="max-w-xl text-base font-medium text-secondary lg:text-lg">Muhammad Fathan Hakim, yang biasa dipanggil Fathan, adalah mahasiswa aktif semester 7 di jurusan Teknik Informatika, Universitas Islam Negeri Syarif Hidayatullah Jakarta. Hobinya bermain game sejak kecil menumbuhkan rasa penasaran yang mendalam tentang bagaimana teknologi digital dibangun.</p>
           </div>
           <div class="w-full px-4 lg:w-1/2">
-            <h3 class="mb-4 text-2xl font-semibold text-dark dark:text-white lg:pt-10 lg:text-2xl">Mari berteman</h3>
+            <h3 class="mb-4 text-2xl font-semibold text-dark dark:text-white lg:pt-10 lg:text-2xl">Interest on IT field</h3>
             <p class="mb-6 text-base font-medium text-secondary lg:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quos, hic animi quasi ipsum exercitationem ipsam incidunt voluptatem.
+              Saya memiliki ketertarikan besar pada Backend Development dan Cloud Compute Engineering. Saya menikmati tantangan dalam merancang dan mengembangkan sistem backend yang efisien dan scalable. Selain itu, saya juga tertarik dalam mengoptimalkan infrastruktur cloud untuk memastikan aplikasi berjalan dengan lancar dan aman. Saya yakin bahwa dengan menggabungkan pengetahuan teknis dan keinginan untuk terus berkembang, saya dapat memberikan kontribusi yang signifikan dalam dunia IT.
             </p>
             <div class="flex items-center">
 
@@ -176,14 +177,14 @@
               <!-- <img src="dist/img/portfolio/BeautyBoost.jpg" alt="BeautyBoost:Acne Detection Healthcare App" width="w-full" /> versi sebelumnya-->
             </div>
             <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">BeautyBoost : Acne Detection Healthcare App</h3>
-            <p class="text-base font-medium text-secondary">Pada proyek BeautyBoost, saya berperan sebagai Cloud Computing Engineer, memastikan infrastruktur cloud yang scalable dan aman untuk mendukung performa aplikasi.</p>
+            <p class="text-base font-medium text-secondary">Pada proyek BeautyBoost, saya berperan sebagai Cloud Computing Engineer, memastikan infrastruktur cloud yang scalable untuk mendukung performa aplikasi.</p>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
             <div class="overflow-hidden rounded-md shadow-md">
               <img src="dist/img/portfolio/Simple Ecommerce.jpeg" alt="E-Commerce" width="w-full" />
             </div>
-            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">E-Commerce</h3>
-            <p class="text-base font-medium text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, iusto! Aliquam, corporis.</p>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">E-Commerce with Cart core</h3>
+            <p class="text-base font-medium text-secondary">Salah satu projek personal saya adalah membangun aplikasi penjualan sederhana berbasis website.</p>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
             <div class="overflow-hidden rounded-md shadow-md">
@@ -192,12 +193,25 @@
             <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Technical Documentation</h3>
             <p class="text-base font-medium text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, iusto! Aliquam, corporis.</p>
           </div>
+          
+          <!-- testing popup box -->
           <div class="mb-12 p-4 md:w-1/2">
             <div class="overflow-hidden rounded-md shadow-md">
-              <img src="dist/img/portfolio/4.png" alt="Tribute Page" width="w-full" />
+              <a href="#" onclick="openModal('modal1')">
+                <img src="dist/img/portfolio/BeautyBoost.jpg" alt="BeautyBoost: Acne Detection Healthcare App" class="w-full" />
+              </a>
             </div>
-            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Tribute Page</h3>
-            <p class="text-base font-medium text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, iusto! Aliquam, corporis.</p>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">BeautyBoost: Acne Detection Healthcare App</h3>
+            <p class="text-base font-medium text-secondary">Pada proyek BeautyBoost, saya berperan sebagai Cloud Computing Engineer.</p>
+          </div>
+        
+          <!-- Modal for BeautyBoost -->
+          <div id="modal1" class="modal hidden fixed z-50 inset-0 overflow-y-auto">
+            <div class="modal-content bg-white dark:bg-dark p-6 rounded-lg shadow-lg mx-auto mt-20 max-w-md">
+              <span class="close absolute top-2 right-2 text-gray-500 cursor-pointer" onclick="closeModal('modal1')">&times;</span>
+              <h2 class="text-2xl font-semibold mb-4">BeautyBoost: Acne Detection Healthcare App</h2>
+              <p>Pada proyek BeautyBoost, saya bertanggung jawab sebagai Cloud Computing Engineer, di mana saya memastikan infrastruktur cloud yang scalable dan aman untuk mendukung performa aplikasi. Proyek ini berfokus pada deteksi jerawat menggunakan teknologi machine learning yang diintegrasikan dengan layanan cloud.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -205,17 +219,17 @@
     <!-- Portfolio Section End -->
 
     <!-- Clients Section Start -->
-    <section id="clients" class="bg-slate-800 pt-36 pb-32 dark:bg-slate-300">
+    <section id="milestones" class="bg-slate-800 pt-36 pb-32 dark:bg-slate-300">
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 text-center">
-            <h4 class="mb-2 text-lg font-semibold text-primary">Clients</h4>
-            <h2 class="mb-4 text-3xl font-bold text-white dark:text-dark sm:text-4xl lg:text-5xl">Yang Pernah Bekerjasama</h2>
-            <p class="text-md font-medium text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero suscipit facilis velit!</p>
+            <h4 class="mb-2 text-lg font-semibold text-primary">Milestones</h4>
+            <h2 class="mb-4 text-3xl font-bold text-white dark:text-dark sm:text-4xl lg:text-3xl">Yang Pernah Bekerjasama</h2>
+            <p class="text-md font-medium text-secondary md:text-lg">Berikut adalah sertifikasi yang telah saya peroleh sampai saat ini.</p>
           </div>
         </div>
 
-        <div class="w-full px-4">
+        <!-- <div class="w-full px-4">
           <div class="flex flex-wrap items-center justify-center">
             <a href="#" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
               <img src="dist/img/clients/google.svg" alt="Google" />
@@ -230,7 +244,7 @@
               <img src="dist/img/clients/traveloka.svg" alt="traveloka" />
             </a>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
     <!-- Clients Section End -->
@@ -361,7 +375,7 @@
                 <a href="#portfolio" class="mb-3 inline-block text-base hover:text-primary">Portfolio</a>
               </li>
               <li>
-                <a href="#clients" class="mb-3 inline-block text-base hover:text-primary">Clients</a>
+                <a href="#milestones" class="mb-3 inline-block text-base hover:text-primary">Milestones</a>
               </li>
               <!-- <li>
                 <a href="#blog" class="mb-3 inline-block text-base hover:text-primary">Blog</a>
