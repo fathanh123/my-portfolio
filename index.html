@@ -186,12 +186,24 @@
             <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">E-Commerce with Cart core</h3>
             <p class="text-base font-medium text-secondary">Salah satu projek personal saya adalah membangun aplikasi penjualan sederhana berbasis website.</p>
           </div>
+          <!-- testing popup box -->
           <div class="mb-12 p-4 md:w-1/2">
             <div class="overflow-hidden rounded-md shadow-md">
-              <img src="dist/img/portfolio/3.png" alt="Technical Documentation" width="w-full" />
+              <a href="#" onclick="openModal('modal2')">
+                <img src="dist/img/portfolio/Simple Ecommerce.jpeg" alt="BeautyBoost: Acne Detection Healthcare App" class="w-full" />
+              </a>
             </div>
-            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Technical Documentation</h3>
-            <p class="text-base font-medium text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, iusto! Aliquam, corporis.</p>
+            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Simple E-Commerce App</h3>
+            <p class="text-base font-medium text-secondary">Aplikasi jual beli sederhana dengan fitur cart didalamnya.</p>
+          </div>
+        
+          <!-- Modal for BeautyBoost -->
+          <div id="modal2" class="modal hidden fixed z-50 inset-0 overflow-y-auto">
+            <div class="modal-content bg-white dark:bg-dark p-6 rounded-lg shadow-lg text-dark dark:text-white mx-auto mt-20 max-w-md">
+              <span class="close absolute top-2 right-2 text-gray-500 cursor-pointer" onclick="closeModal('modal2')">&times;</span>
+              <h2 class="text-2xl font-semibold mb-4">Simple E-Commerce App</h2>
+              <p>Aplikasi jual beli berbasis website ini menggunakan framework Next js sebagai Front-end pada aplikasi dan framework Express js sebagai API fitur Cart.</p>
+            </div>
           </div>
           
           <!-- testing popup box -->
